@@ -1,0 +1,36 @@
+Schema {
+	query: Query
+	mutation: Mutation
+}
+
+type Client {
+	id: ID!,
+	name: String!,
+	age: int,
+	email: String!
+	importance: [ClientImportance!]}
+}
+
+type Mutation {
+			createClient(name: String!, age: Int, email: String!): Client!
+			updateClient(id: ID!, name String, age: Int, email: String): Client!
+			deleteClient(id: ID!): Client!
+}
+
+type Query {
+			clientById(id: ID!): Client!
+			listOfAllClients: [Client!]!
+			last10Clients(limit: Int = 10):
+}
+
+type ClientImportance {
+    id: ID!
+    name: Rating!}
+
+Enum Importance {
+    High
+    Middle
+    Low
+    Bad
+}
+
