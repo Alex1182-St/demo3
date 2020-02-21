@@ -1,6 +1,7 @@
 package com.example3.demo3;
 
 
+import graphql.kickstart.tools.GraphQLMutationResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

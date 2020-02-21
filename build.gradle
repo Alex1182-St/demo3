@@ -23,6 +23,7 @@ repositories {
 }
 
 dependencies {
+	compile group: 'com.graphql-java-kickstart', name: 'graphql-java-tools', version: '6.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-security'
